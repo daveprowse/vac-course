@@ -1,7 +1,7 @@
 # Opt 04 - Vault with UI, RAFT and Configs
 In this lab we will work with the UI but utilizing a proper server setup with a configuration file and Raft storage. 
 
-> Note: This lab takes things to the next level. As of the writing of this lab, there was is issue with Vault 1.13 where modifications in the UI can only be done if TLS is running. So, we will incorporate a hostname and a basic TLS certificate.  That requires some networking changes. Be ready! 
+> Note: This lab takes things to the next level. As of the writing of this lab, there was (is) issue with Vault 1.13 where modifications in the UI can only be done if TLS is running. So, we will incorporate a hostname and a basic TLS certificate.  That requires some networking changes. Be ready! 
 
 > Note: As usual, I recommend a Linux virtual machine for this lab. More so for this lab because of the extra configurations we will have to make to the system.
 

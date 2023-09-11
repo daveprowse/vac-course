@@ -3,8 +3,13 @@ Welcome to the first lab!
 In this lab you will install the HashiCorp Vault program to your system. 
 Remember, in this course, I am demonstrating on a Debian Linux virtual machine. Let's go!
 
-## Update your system. (Optional due to time constraints)
+## Update your system.
 If you do not have automatic updates running, then update your operating system before continuing with the installation.  
+
+For example, in Debian Linux you would either:
+
+1. Go to Software > Updates and initiate the update, or:
+2. In the terminal, type `apt update && apt upgrade -y`
 
 Restart the system when complete.
 
@@ -25,7 +30,7 @@ https://releases.hashicorp.com/vault
 
 Locate the latest version for your platform, download it, verify the checksum, unzip it, and copy it to the proper binaries directory (such as: /usr/local/bin). More instructions are available at the link in Option #1. 
 
-If you have any issues, ASK QUESTIONS! 
+> Note: For an example of how to verify and install HashiCorp binaries, see my website at [this link](https://prowse.tech/terraform-binary-install-linux/).
 
 > Note: As you progress, Option #2 will be the preferred method of the two. Furthermore, for custom installations, you might need to install from source. Get the source files here: https://github.com/hashicorp/vault. 
 

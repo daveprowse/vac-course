@@ -2,7 +2,7 @@
 Here are a couple of VSCode modifications that you might like.
 
 ## Maximize/Restore Terminal Toggle
-As of the writing of this document, VSCode does not have a built-in keyboard shortcut to maximize the terminal. This is a super-nice feature already exists, we just have to assign a keyboard shortcut to it:
+As of the writing of this document, VSCode does not have a built-in keyboard shortcut to maximize the terminal. This super-nice feature already exists, we just have to assign a keyboard shortcut to it:
 
 - Go to File > Preferences > Keyboard Shortcuts
   - or <kbd>Ctrl+K</kbd> and <kbd>Ctrl+S</kbd>
