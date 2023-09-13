@@ -8,11 +8,11 @@ Start the Vault dev server with the following command:
 
 `vault server -dev`
 
-Then, export the Vault address and main Vault token as environment variables. (I suggest doing this in two terminals.)
+Then, export the Vault address and the root token ID as environment variables. (I suggest doing this in two terminals.)
 
 ` export VAULT_ADDR=http://127.0.0.1:8200`
 
-> Note: Do not export the root token ID yet.
+` export VAULT_TOKEN=<token_id>`
 
 Verify that the Vault is running with a `vault status` command. 
 
@@ -26,7 +26,7 @@ Open a browser and connect to your Vault server:
 
 Now sign in to Vault with the root token displayed when you started the dev server in the CLI.
 
-Once signed in you should see the cubbyhole and secret/ secrets engine for the root account.
+Once signed in you should see the cubbyhole secrets engine for the root account, and the secret/ secrets engine.
 
 ### Analyze the system from the CLI
 Go to the terminal and run the `vault status` command if you didn't already.
@@ -34,16 +34,6 @@ Go to the terminal and run the `vault status` command if you didn't already.
 Now, attempt to view the secrets engines that are running:
 
 `vault secrets list` 
-
-This should fail. Permission should be denied. While we have been given access to the UI, we have not gotten access to the CLI yet - the two are separate. 
-
-Export the root token as an environment variable:
-
-` export VAULT_TOKEN=<token_id>`   
-
-The token_id was the one we used in the UI.
-
-Run `vault secrets list` again.
 
 You should see the cubbyhole, identity, secret/ and system secrets engines running. Remember, these always run, but the identity and system secrets engines are not visible in the UI. 
 
